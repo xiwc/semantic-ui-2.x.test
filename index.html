@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Semantic-UI Test</title>
-    <link rel="stylesheet" href="semantic/dist/semantic.css" />
-    <link rel="stylesheet" href="custom.css" />
-    <script src="jquery-1.11.2.js"></script>
-    <script src="semantic/dist/semantic.js"></script>
-    <script src="custom.js"></script>
+    <link rel="stylesheet" href="lib/semantic/dist/semantic.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="lib/jquery-1.11.2.js"></script>
+    <script src="lib/semantic/dist/semantic.js"></script>
+    <script src="js/custom.js"></script>
 </head>
 
 <body>
@@ -42,18 +42,128 @@
         </a>
     </div>
     <div class="ui fixed inverted menu">
-        <div class="container">
-            <a class="ui button launch item ts-sidebar-trigger">
-                <i class="content icon"></i> Menu
-            </a>
-            <div class="title item">
-                <b>UI Module:</b> Sidebar
+        <a class="ui button launch item ts-sidebar-trigger">
+            <i class="content icon"></i> Menu
+        </a>
+        <div class="title item">
+            <b>UI Module:</b> Sidebar
+        </div>
+        <div class="ui dropdown item">
+            <div class="">File</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item">New</div>
+                <div class="item">
+                    <span class="description">ctrl + o</span> Open...
+                </div>
+                <div class="item">Make a copy</div>
+                <div class="item">
+                    <i class="folder icon"></i> Move to folder
+                </div>
+                <div class="divider"></div>
+                <div class="item">Download As...</div>
+                <div class="item">
+                    <i class="dropdown icon"></i> Publish To Web
+                    <div class="menu">
+                        <div class="item">Google Docs</div>
+                        <div class="item">Google Drive</div>
+                    </div>
+                </div>
+                <div class="item">E-mail Collaborators</div>
             </div>
-            <div class="right menu">
-                <a class="item">
-                    logout
-                </a>
+        </div>
+        <div class="ui pointing inline dropdown item">
+            <div class="">
+                <img class="ui avatar image" src="img/img01.png"> Jenny Hess
             </div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="header">
+                    <i class="tags icon"></i> Filter by tag
+                </div>
+                <div class="divider"></div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/img01.png"> Jenny Hess
+                </div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/img01.png"> Elliot Fu
+                </div>
+            </div>
+        </div>
+        <div class="ui pointing inline dropdown item">
+            <div class="text">
+                <img class="ui avatar image" src="img/img01.png"> Jenny Hess
+            </div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="header">
+                    <i class="tags icon"></i> Filter by tag
+                </div>
+                <div class="divider"></div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/img01.png"> Jenny Hess
+                </div>
+                <div class="item">
+                    <img class="ui avatar image" src="img/img01.png"> Elliot Fu
+                </div>
+            </div>
+        </div>
+        <!-- <div class="ui pointing dropdown link item">
+            <img src="img/img01.png" class="ui avatar image" />
+            <span class="">Shopping</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item"><i class="edit icon"></i> Edit Post</div>
+                <div class="item"><i class="delete icon"></i> Remove Post</div>
+                <div class="item"><i class="hide icon"></i> Hide Post</div>
+            </div>
+        </div> -->
+        <!-- <div class="ui pointing dropdown link item">
+            <span class="">Shopping</span>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="header">Categories</div>
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Clothing</span>
+                    <div class="menu">
+                        <div class="header">Mens</div>
+                        <div class="item">Shirts</div>
+                        <div class="item">Pants</div>
+                        <div class="item">Jeans</div>
+                        <div class="item">Shoes</div>
+                        <div class="divider"></div>
+                        <div class="header">Womens</div>
+                        <div class="item">Dresses</div>
+                        <div class="item">Shoes</div>
+                        <div class="item">Bags</div>
+                    </div>
+                </div>
+                <div class="item">Home Goods</div>
+                <div class="item">Bedroom</div>
+                <div class="divider"></div>
+                <div class="header">Order</div>
+                <div class="item">Status</div>
+                <div class="item">Cancellations</div>
+            </div>
+        </div> -->
+        <div class="item">
+            <span style="visibility: hidden;">加载中...</span>
+            <div class="ui active dimmer">
+                <div class="ui mini text loader">加载中...</div>
+            </div>
+        </div>
+        <div class="icon item">
+            <i class="big spinner loading icon"></i>
+        </div>
+        <div class="right menu">
+            <!-- <div class="item">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div> -->
+            <a class="ui item">Logout</a>
         </div>
     </div>
     <div class="pusher ts-main-content">
